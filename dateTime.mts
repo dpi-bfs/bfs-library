@@ -1,7 +1,7 @@
 /**
  * Source: "John Bentley's \OneDrive - DPIE\Documents\Sda\Code\Typescript\library\"
  * Warning: Don't edit outside of that location.
- * Author: John Bentley XXXYYY
+ * Author: John Bentley XXXYYYZZZ
  */
 
 import { DateTime as LuxonDateTime } from 'luxon';
