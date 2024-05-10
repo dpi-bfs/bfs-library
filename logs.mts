@@ -1,4 +1,4 @@
-// import * as Logs from "./lib/logs.mjs"
+// import * as Logs from "./BfsLibrary/logs.mjs"
 
 // From more detailed, to less. debug is most detailed
 // To remove Privacy Exposing data from logs set log level to something above
