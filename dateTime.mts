@@ -1,7 +1,7 @@
 /**
  * Source: "John Bentley's \OneDrive - DPIE\Documents\Sda\Code\Typescript\BfsLibrary\"
  * Warning: Don't edit outside of that location.
- * Author: John Bentley. AAA.
+ * Author: John Bentley. AAA. BBB.
  */
 
 import { DateTime as LuxonDateTime } from 'luxon';
