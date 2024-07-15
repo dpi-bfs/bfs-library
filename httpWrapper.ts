@@ -18,7 +18,7 @@ export async function postData(data: object, url: string, headers?: Record<strin
   // Merge default headers with provided headers
   const mergedHeaders = { ...defaultHeaders, ...headers };
 
-  const spatialPromise = new Promise<Http.DatabaseResponse>((resolve, reject) => {
+  const promise = new Promise<Http.DatabaseResponse>((resolve, reject) => {
     Http.sendRequest(url, {
       method: 'POST',
       body: JSON.stringify(data),
@@ -40,5 +40,5 @@ export async function postData(data: object, url: string, headers?: Record<strin
     }, 24000);
   });
 
-  return await Promise.race([spatialPromise, timeoutPromise]);
+  return await Promise.race([promise, timeoutPromise]);
 }
