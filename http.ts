@@ -21,15 +21,15 @@ export async function sendRequest(
   options?: RequestInit,
 ): Promise<DatabaseResponse> {
 
-  console.log(`Requesting ${JSON.stringify({ url, ...options }, null, 2)}`)
+  // console.log(`Requesting ${JSON.stringify({ url, ...options }, null, 2)}`)
 
   const resp = await fetch(url, options)
 
   const statusCode = resp.status
-  console.log(`status code: ${statusCode}`)
+  console.log(`http.ts: status code: ${statusCode}`)
   
   const bodyText = await resp.text()
-  console.log(`${statusCode} response from Database: ${bodyText}`)
+  // console.log(`${statusCode} response from Database: ${bodyText}`)
 
   if (!resp.ok) {
     let errorText = bodyText
@@ -41,12 +41,12 @@ export async function sendRequest(
     } catch (e) {
       // do nothing
     }
-    console.error(`Error from Database: ${errorText}`)
+    console.error(`http.ts: Error from Database: ${errorText}`)
     throw new Boom.Boom(errorText, { statusCode })
   }
 
   const returnPacket: DatabaseResponse = { body: bodyText, statusCode }
-  console.log("returnPacket", returnPacket)
+  // console.log("http.ts: returnPacket", returnPacket)
   return returnPacket
   
 }
