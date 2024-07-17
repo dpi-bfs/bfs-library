@@ -25,7 +25,8 @@ export async function postData(data: object, url: string, headers?: Record<strin
       headers: mergedHeaders,
       signal: abortController.signal,
     }).then((response: Http.DatabaseResponse) => {
-      console.log('Response from database: ', response);
+      // console.log('Response from database: ', response);
+      console.log('Response from database OK');
       timeoutId && clearTimeout(timeoutId);
       resolve(response);
     }, reject);
