@@ -13,7 +13,7 @@ import { FormApprovalFlowInstance } from "@oneblink/types/typescript/approvals.j
 import * as Logs from "./logs.mjs";
 
 
-const formsSDK = new OneBlink.Forms({
+export const formsSDK = new OneBlink.Forms({
   accessKey: process.env.FORMS_ACCESS_KEY!,
   secretKey: process.env.FORMS_SECRET_KEY!,
 });
