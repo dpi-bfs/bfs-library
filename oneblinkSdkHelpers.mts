@@ -33,6 +33,7 @@ export interface Request {
     submissionTimestamp: string,
     externalId: string,
     secret: string,
+    submission: object
   },
   headers: {
     host: string,
