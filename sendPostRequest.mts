@@ -6,7 +6,7 @@
 
 import fetch, { Response } from 'node-fetch';
 
-// ***
+// *** xxx yyyy sss
 export async function sendPostRequest(data: any, url: string) {
 
     try {
