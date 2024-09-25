@@ -6,12 +6,6 @@
 
 import fetch, { Response } from 'node-fetch';
 
-// export interface PostData {
-//   formId: number,
-//   submissionId: string,
-//   pdf: string
-// }
-
 export async function sendPostRequest(data: any, url: string) {
 
     try {
